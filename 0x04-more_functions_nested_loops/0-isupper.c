@@ -1,16 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (success)
+ * _isupper - checks if parameter is an uppercase character.
+ * @c: input character.
+ * Return: 1 if is an uppercase character, 0 in other case.
  */
-
-int main(void)
+int _isupper(int c)
 {
-
-printf("_putchar\n");
-
-return (0);
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
